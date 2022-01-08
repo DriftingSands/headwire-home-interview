@@ -2,10 +2,14 @@ import React from 'react'
 import HomeBackground from '../../components/HomeBackground/HomeBackground';
 import {LeftSidebar, RightSidebar} from '../../components/Sidebar/Sidebar';
 import './Home.scss'
+import Navbar from '../../components/Navbar/Navbar';
+import Quote from '../../components/Quote/Quote'
+import Services from '../../components/Services/Services'
 
 export default function Home() {
     return (
     <>
+    <Navbar/>
     <HomeBackground />
     <LeftSidebar/>
     <RightSidebar/>
@@ -22,6 +26,10 @@ export default function Home() {
             </button>
     
     </main>
+
+    <Quote/>
+
+    <Services/>
 
     </>
 )
