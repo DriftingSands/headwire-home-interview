@@ -1,15 +1,94 @@
-.homeBackground {
-    display: flex;
-    width: 100%;
-    // border: 2px crimson solid;
-    // overflow: hidden;
+.backgroundWrapper {
     position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.backgroundText {
+    
+    position: relative;
+    top: 31%;
+    z-index: 2;
+    text-align: center;
+    
+    h4 {
+        box-sizing: border-box;
+        font-family: 'Titillium Web', sans-serif;
+        color: transparent;
+        font-size: 250px;
+        visibility: hidden;
+        letter-spacing: 100px;
+        opacity: .4;
+        margin: 0;
+        // removing letter spacing from last letter
+        margin-right: -100px;
+    }
+    @supports((text-stroke: 4px white) or (-webkit-text-stroke: 4px white)) {
+        h4 {
+            text-shadow: none;
+            text-stroke: 2px white;
+            -webkit-text-stroke: 2px white;
+            visibility: visible;
+        }
+    }
+}
+
+.backgroundButtons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    border-top: white 1px solid;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+        width: 90px;
+        height: 90px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        background-image: url('../../assets/icons/right-arrow.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        filter: invert(100%);
+    }
+    
+    .prevButton {
+        background-image: url('../../assets/icons/left-arrow.png');
+    }
+    // .prevButton::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0; left: 0;
+    //     width: 100%; height: 100%;
+    //     background-image: url('../../assets/icons/right-arrow.png');
+    //     filter: invert(100%);
+    //   }
+
+}
+
+
+.backgroundImages {
+    
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     
     img {
         position: relative;
         top: 0;
         left: 0;
-        width: 100%;
+        max-width: 100%;
         transition: opacity 1s ease;
     }
     

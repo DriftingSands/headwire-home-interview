@@ -1,9 +1,20 @@
 import React from 'react'
+import './Sidebar.scss'
 
-export default function Sidebar() {
+export function LeftSidebar() {
     return (
-        <div>
-            sidebar test
-        </div>
+        <aside className='leftSidebarWrapper'>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Pintrest</li>
+        </aside>
+    )
+}
+
+export function RightSidebar() {
+    return (
+        <aside className='rightSidebarWrapper'>
+        </aside>
     )
 }

@@ -1,13 +1,16 @@
 import React from 'react'
 import HomeBackground from '../../components/HomeBackground/HomeBackground';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import {LeftSidebar, RightSidebar} from '../../components/Sidebar/Sidebar';
 import './Home.scss'
 
 export default function Home() {
-return (
+    return (
+    <>
+    <HomeBackground />
+    <LeftSidebar/>
+    <RightSidebar/>
     <main className='homeWrapper'>
-            {/* <Sidebar/> */}
-        <header>
+
             <h1>Best Furniture and Decor</h1>
             <p>
                 We pride ourselves on being builders - creating architectural and creatuve solutions 
@@ -17,13 +20,9 @@ return (
             <button>
                 View Projects
             </button>
-        </header>
-
-        <div className='background'>
-            <h4>STUDIO</h4>
-            <HomeBackground />
-        </div>
-        
+    
     </main>
+
+    </>
 )
 }

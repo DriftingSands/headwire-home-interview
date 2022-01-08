@@ -4,8 +4,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    position: -webkit-sticky;
+    position: absolute;
     top: 0;
     border: white 1px solid;
     z-index: 99;
@@ -65,7 +64,9 @@
         height: 100%;
     }
     .right {
-        border: 1px white solid;
+        width: 90px;
+        display: flex;
+        justify-content: center;
     }
 
 }

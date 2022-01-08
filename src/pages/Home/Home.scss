@@ -1,34 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Raleway:wght@100;200;300;400;500;600&family=Titillium+Web:wght@900&display=swap');
-
-
 .homeWrapper {
+    position: absolute;
+    top: 370px;
+    z-index: 10;
     background: url();
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: crimson 2px solid;
+    width: 100%;
+
     h1 {
         font-family: 'Montserrat', sans-serif;
-        font-size: 100px;
-    }
-    h4 {
-        font-family: 'Titillium Web', sans-serif;
-        color: transparent;
-        font-size: 200px;
-        visibility: hidden;
-    }
-    @supports((text-stroke: 4px white) or (-webkit-text-stroke: 4px white)) {
-        h4 {
-            text-shadow: none;
-            text-stroke: 4px white;
-            -webkit-text-stroke: 4px white;
-            visibility: visible;
-        }
+        font-size: 90px;
+        font-weight: 200;
     }
 
     p {
+        width: 60%;
+        text-align: center;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     button {
         background-color: #1a1a1a;
+        width: 250px;
+        height: 85px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+
     }
 }

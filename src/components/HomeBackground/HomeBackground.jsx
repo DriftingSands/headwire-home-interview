@@ -5,6 +5,9 @@ import Slider1 from '../../assets/slider1-home1.jpeg'
 import Slider2 from '../../assets/slider2-home1.jpeg'
 import Slider3 from '../../assets/slider3-home1.jpeg'
 
+import arrowR from '../../assets/icons/right-arrow.png'
+import arrowL from '../../assets/icons/left-arrow.png'
+
 export default function HomeBackground() {
     const images = [Slider1, Slider2, Slider3]
     const length = (images.length - 1)
@@ -28,16 +31,21 @@ export default function HomeBackground() {
     
     
     return (
-        <>
-            <button onClick={prevImage} >prev</button>
-            <button onClick={nextImage} >next</button>
-        <section className='homeBackground'>
+        <div className='backgroundWrapper'>
+        <section className='backgroundButtons'>
+            <button onClick={prevImage} className='prevButton' ></button>
+            <button onClick={nextImage} className='nextButton' ></button>
+        </section>
+        <section className='backgroundText'>
+            <h4>STUDIO</h4>
+        </section>
+        <section className='backgroundImages'>
             {images.map((slide, index) => {
                 return (
                     <img src={slide} alt="background" id='backgroundImage' className={index === currentImage ? 'active' : 'inactive'} key={index}/>
                 )
             })}
         </section>
-        </>
+        </div>
     )
 }
