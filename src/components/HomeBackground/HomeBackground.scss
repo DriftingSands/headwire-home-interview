@@ -1,0 +1,25 @@
+.homeBackground {
+    display: flex;
+    width: 100%;
+    // border: 2px crimson solid;
+    // overflow: hidden;
+    position: relative;
+    
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 1s ease;
+    }
+    
+    .inactive {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .active {
+        order: 0;
+        opacity: 1;
+    }
+}

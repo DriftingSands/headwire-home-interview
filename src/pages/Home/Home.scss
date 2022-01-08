@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Raleway:wght@100;200;300;400;500;600&family=Titillium+Web:wght@900&display=swap');
+
+
+.homeWrapper {
+    background: url();
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 100px;
+    }
+    h4 {
+        font-family: 'Titillium Web', sans-serif;
+        color: transparent;
+        font-size: 200px;
+        visibility: hidden;
+    }
+    @supports((text-stroke: 4px white) or (-webkit-text-stroke: 4px white)) {
+        h4 {
+            text-shadow: none;
+            text-stroke: 4px white;
+            -webkit-text-stroke: 4px white;
+            visibility: visible;
+        }
+    }
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    button {
+        background-color: #1a1a1a;
+    }
+}
