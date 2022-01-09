@@ -30,8 +30,8 @@ export default function Team() {
             </div>
 
             <nav className='teamPageNav'>
-                <button onClick={() => setTeamPage(0)} className={teamPage === 0 && 'active'} ></button>
-                <button onClick={() => setTeamPage(1)} className={teamPage === 1 && 'active'} ></button>
+                <button onClick={() => setTeamPage(0)} className={teamPage === 0 ? 'active' : 'inactive'} ></button>
+                <button onClick={() => setTeamPage(1)} className={teamPage === 1 ? 'active' : 'inactive'} ></button>
             </nav>
             
         </section>

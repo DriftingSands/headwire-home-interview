@@ -2,7 +2,7 @@ import React from 'react'
 import './TeamPortrait.scss'
 
 export default function TeamPortrait(props) {
-    const {member: {first_name, last_name, job_title, description, profile_picture}} = props
+    const {member: {first_name, last_name, job_title, profile_picture}} = props
 
     return (
         <div className='portraitWrapper' onClick={() => props.openMember(props.member)} >

@@ -47,7 +47,7 @@ export default function Services() {
                 <div className='achivements'>
                     {achivementsArray.map((obj, index) => {
                         return (
-                            <div className='achivementWrapper'>
+                            <div className='achivementWrapper' key={index}>
                                 <span className='value'>[{obj.value}]</span>
                                 <span className='title'>{obj.title}</span>
                             </div>
