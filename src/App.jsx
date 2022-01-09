@@ -1,11 +1,12 @@
 import './App.scss';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 
 function App() {
 return (
     <div className="App">
         <Home/>
-        <div style={{height: '200vh'}}>test</div>
+        <Footer/>
     </div>
 );
 }
