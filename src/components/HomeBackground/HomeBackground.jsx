@@ -5,9 +5,6 @@ import Slider1 from '../../assets/slider1-home1.jpeg'
 import Slider2 from '../../assets/slider2-home1.jpeg'
 import Slider3 from '../../assets/slider3-home1.jpeg'
 
-import arrowR from '../../assets/icons/right-arrow.png'
-import arrowL from '../../assets/icons/left-arrow.png'
-
 export default function HomeBackground() {
     const images = [Slider1, Slider2, Slider3]
     const length = (images.length - 1)

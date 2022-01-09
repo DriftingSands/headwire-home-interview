@@ -1,0 +1,19 @@
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    span {
+        color: gray;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    h6 {
+        margin: 20px 0;
+        font-size: 36px;
+        font-weight: 500;
+    }
+}

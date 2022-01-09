@@ -5,6 +5,7 @@ import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import image1 from '../../assets/iconbox1.2.png'
 import image2 from '../../assets/iconbox1.1.png'
 import image3 from '../../assets/iconbox1.3.png'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 export default function Services() {
     const cardArray = [
@@ -35,11 +36,7 @@ export default function Services() {
         <section className='servicesWrapper'>
             <div className='foreground'>
 
-                <div className='title'>
-                    <span>[ Our Services ]</span>
-                    <h6>What We Can Offer</h6>
-                    <div className='titleUnderline'></div>
-                </div>
+                <SectionTitle title='Our Services' desc='What We Can Offer' />
 
                 <div className='cards'>
                     {cardArray.map((obj, index) => {

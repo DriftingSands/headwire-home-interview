@@ -1,0 +1,55 @@
+.portraitWrapper{
+    cursor: pointer;
+    position: relative;
+    min-width: 20%;
+    
+    #profilePicture {
+        transition: filter .5s ease;
+        width: 100%;
+    }
+    
+    .overlay {
+        opacity: 0;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .5s ease;
+        
+        > * {
+            margin: 0;
+        }
+
+        .portraitName {
+            margin: 0 0 0 0;
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: auto;
+        }
+        .plus{
+            margin-top: -16px;
+            font-size: 60px;
+
+        }
+        .portraitTitle {
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: auto;
+        }
+    }
+}
+
+.portraitWrapper:hover {
+    #profilePicture {
+        filter: grayscale(100%);
+    }
+    .overlay {
+        opacity: 100;
+    }
+}

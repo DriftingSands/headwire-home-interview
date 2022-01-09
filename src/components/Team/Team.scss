@@ -1,0 +1,52 @@
+.teamWrapper {
+    width: 100%;
+    height: 100vh;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portraits {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+
+    > * {
+        transition: transform 1s ease;
+    }
+}
+
+#portraits1 {
+    > * {
+        transform: translateX(-500%);
+    }
+}
+
+.teamPageNav {
+    display: flex;
+    margin-bottom: 80px;
+    button {
+        background-image: url('../../assets/icons/black-circle.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20%;
+        height: 30px;
+        width: 30px;
+        border: 2px #00000000 solid;
+        border-radius: 50%;
+        margin: 5px;
+        &:hover {
+            border: 2px #00000060 solid;
+        }
+    }
+    .active {
+        border: 2px #000000 solid;
+        &:hover {
+            border: 2px #000000 solid;
+            cursor: default;
+        }
+    }
+}
