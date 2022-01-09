@@ -23,7 +23,12 @@ export default function Services() {
         },
     ]
 
-
+    const achivementsArray = [
+        {title: 'current clients', value: '180+'},
+        {title: 'years of expirience', value: '10+'},
+        {title: 'awards winning', value: '35+'},
+        {title: 'offices worldwide', value: '5+'},
+    ]
 
 
     return (
@@ -31,7 +36,7 @@ export default function Services() {
             <div className='foreground'>
 
                 <div className='title'>
-                    <span>[Our Services]</span>
+                    <span>[ Our Services ]</span>
                     <h6>What We Can Offer</h6>
                     <div className='titleUnderline'></div>
                 </div>
@@ -43,7 +48,14 @@ export default function Services() {
                 </div>
 
                 <div className='achivements'>
-
+                    {achivementsArray.map((obj, index) => {
+                        return (
+                            <div className='achivementWrapper'>
+                                <span className='value'>[{obj.value}]</span>
+                                <span className='title'>{obj.title}</span>
+                            </div>
+                        )
+                    })}
                 </div>
 
             </div>

@@ -2,15 +2,68 @@
     background-color: white;
     width: 100vw;
     height: 100vh;
-
-
-    .titleUnderline {
-        height: 5px;
-        width: 70px;
-        border-bottom: black 3px dotted;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    .title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+        span {
+            color: gray;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        h6 {
+            margin: 20px 0;
+            font-size: 36px;
+            font-weight: 500;
+        }
     }
+    
+    .cards {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+.achivements {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.achivementWrapper {
+    margin: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
+    .value {
+        color: rgb(156, 156, 156);
+        font-size: 40px;
+    }
+    .title {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
 
-
+.titleUnderline {
+    height: 5px;
+    width: 70px;
+    border-bottom: black 3px dotted;
+    margin-bottom: 20px;
 }

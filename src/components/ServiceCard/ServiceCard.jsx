@@ -8,7 +8,8 @@ export default function ServiceCard(props) {
             {console.log(props)}
             <img src={props.cardInfo.image} alt="" />
             <h5>{props.cardInfo.title}</h5>
-            <span>{props.cardInfo.description}</span>
+            <p>{props.cardInfo.description}</p>
+            <span>Read More</span>
         </div>
     )
 }
