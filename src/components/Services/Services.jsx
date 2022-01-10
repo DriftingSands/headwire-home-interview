@@ -40,7 +40,7 @@ export default function Services() {
 
                 <div className='cards'>
                     {cardArray.map((obj, index) => {
-                        return (<ServiceCard cardInfo={obj} key={index} />)
+                        return (<ServiceCard cardInfo={obj} key={index} backgroundMultiplier={index} />)
                     })}
                 </div>
 

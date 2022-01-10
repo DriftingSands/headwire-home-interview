@@ -6,7 +6,7 @@ export default function NavMenu(props) {
     const menuRef = useRef()
 
     useEffect(() => {
-        // closes the Menu if user clicks anywhere outside
+        // closes the Menu if user clicks anywhere outside of it
         const closeMenu = (e) => {
             if (!menuRef.current.contains(e.target)) {
                 props.close()

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
 .quoteWrapper {
     width: 100%;
     height: 330px;
@@ -6,12 +8,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+        background-image: url('../../assets/building-background.png');
+        background-position: 25% 45%;
+    }
+    &::after {
+        position: absolute;
+        right: 15%;
+        bottom: 15%;
+        font-size: 120px;
+        color: gray;
+        font-family: 'Qwitcher Grypen', cursive;
+        content: 'Oswald';
+        z-index: 1;
+    }
     
     .contentWrapper {
+        position: relative;
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
+        // z index is required so the signature appears under the other text
+        z-index: 2;
 
     }
     
