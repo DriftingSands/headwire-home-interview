@@ -2,4 +2,133 @@
     background-color: #1a1a1a;
     width: 100%;
     min-height: 100px;
+    color: gray;
+    font-family: 'Raleway', sans-serif;
+    // padding: 90px 120px;
+    display: flex;
+    flex-direction: column;
+    
+    span {
+        font-size: 16px;
+        font-weight: 600;
+        // margin: 10px 0;
+        display: flex;
+        align-items: center;
+        img {
+            height: 16px;
+            margin-right: 15px;
+            filter: invert(100%);
+        }
+    }
+
+    strong {
+        color: white;
+    }
+
+}
+
+.footerLogo {
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.footerTop {
+    margin: 90px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    
+    h6 {
+        font-size: 24px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+    }
+    
+    > div {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .linkButtons {
+        margin-top: 20px;
+
+        > button {
+            margin-right: 20px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: transparent;
+            position: relative;
+        }
+        > button:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../../assets/icons/facebook.png');
+            filter: invert(100%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+        }
+        .twitter:after {
+            background-image: url('../../assets/icons/twitter.png');
+        }
+        .linkedIn:after {
+            background-image: url('../../assets/icons/linkedin.png');
+        }
+        .instagram:after {
+            background-image: url('../../assets/icons/instagram.png');
+        }
+    }
+}
+.subscribe {
+    padding-bottom: 30px;
+}
+.subscribeForm {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-bottom: darkgray 1px solid;
+
+    input {
+        border: none;
+        background: none;
+        height: 100%;
+        flex-grow: 1;
+        
+        &::placeholder {
+            color: gray;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+    .subscribeButton {
+        border: none;
+        background-image: url('../../assets/icons/send.png');
+        filter: invert(100%);
+        background-position: center;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        height: 100%;
+        width: 35px;
+    }
+}
+
+.footerBottom {
+    border-top: gray solid 1px;
+    padding: 30px 120px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
