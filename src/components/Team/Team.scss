@@ -18,6 +18,7 @@
         opacity: .1;
         background-image: url('../../assets/building-background.png');
         background-position: 45% 13%;
+        z-index: 1;
     }
 }
 
@@ -26,7 +27,8 @@
     align-items: center;
     width: 100%;
     overflow: hidden;
-
+    z-index: 2;
+    
     > * {
         transition: transform 1s ease;
     }
@@ -39,6 +41,7 @@
 }
 
 .teamPageNav {
+    z-index: 3;
     display: flex;
     margin-bottom: 80px;
     button {
