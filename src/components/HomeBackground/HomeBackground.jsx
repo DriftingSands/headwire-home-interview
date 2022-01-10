@@ -10,12 +10,10 @@ export default function HomeBackground() {
     const length = (images.length - 1)
     const [currentImage, setCurrentImage] = useState(0)
 
-    // use effect disabled so its not distracting while working 
-
-    // useEffect(() => {
-    //     const timer = setTimeout(() => nextImage(), 5000)
-    //     return () => clearTimeout(timer)
-    // }, [currentImage])
+    useEffect(() => {
+        const timer = setTimeout(() => nextImage(), 5000)
+        return () => clearTimeout(timer)
+    }, [currentImage])
 
     const prevImage = () => {
         if (currentImage <= 0) {setCurrentImage(length)}
