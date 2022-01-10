@@ -64,6 +64,7 @@
             border-radius: 50%;
             background-color: transparent;
             position: relative;
+            border: gray 2px solid;
         }
         > button:after {
             content: '';
@@ -103,6 +104,9 @@
         background: none;
         height: 100%;
         flex-grow: 1;
+        color: gray;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
         
         &::placeholder {
             color: gray;

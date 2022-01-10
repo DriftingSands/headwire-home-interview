@@ -1,14 +1,23 @@
+$top-margin: 35%;
+
 .homeWrapper {
     position: absolute;
-    top: 370px;
     z-index: 10;
     background: url();
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: crimson 2px solid;
-    width: 100%;
+
+    // sidebars removed
+    width: calc(100% - 180px);
+    
+    top: $top-margin;
+    max-height: calc(100% - #{$top-margin});
+
+    // top: 35%;
+    // max-height: calc(100% - 35%);
+    overflow-y: hidden;
 
     h1 {
         font-family: 'Montserrat', sans-serif;
@@ -31,6 +40,6 @@
         color: white;
         text-transform: uppercase;
         font-size: 18px;
-
+        border: none;
     }
 }

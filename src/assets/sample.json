@@ -54,5 +54,12 @@
       "job_title":"Marketing Intern",
       "description":"Hi I'm Robert and I work in marketing at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
       "profile_picture":"/imgs/robert.jpeg"
+   },
+   {
+      "first_name":"Patrick",
+      "last_name":"Zimmermann",
+      "job_title":"Junior Developer",
+      "description":"Hi",
+      "profile_picture":"/imgs/patrick.jpeg"
    }
 ]

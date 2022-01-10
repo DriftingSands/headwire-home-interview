@@ -5,7 +5,7 @@ export default function GoToTopButton() {
     const [isVisable, setIsVisable] = useState(false)
 
     const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
+        if (window.scrollY > 300) {
             setIsVisable(true)
         } else {
             setIsVisable(false)
