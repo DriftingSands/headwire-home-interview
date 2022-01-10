@@ -11,7 +11,7 @@ export default function Blog() {
     ]
 
     return (
-        <section className='blogWrapper'>
+        <section className='blogWrapper' id='blogSection'>
             <div className='top'>
                 <SectionTitle title='our blog' desc='Read Our Latest News'/>
 

@@ -17,7 +17,7 @@ export default function Team() {
     }
 
     return (
-        <section className='teamWrapper'>
+        <section className='teamWrapper' id='teamSection'>
 
             {memberInfo && <TeamInfo member={memberInfo} close={closeMember}/>}
 

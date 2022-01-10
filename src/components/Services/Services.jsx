@@ -33,7 +33,7 @@ export default function Services() {
 
 
     return (
-        <section className='servicesWrapper'>
+        <section className='servicesWrapper' id='servicesSection'>
             <div className='foreground'>
 
                 <SectionTitle title='Our Services' desc='What We Can Offer' />

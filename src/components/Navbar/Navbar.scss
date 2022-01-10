@@ -9,7 +9,8 @@
     border: white 1px solid;
     z-index: 99;
     
-    button {
+    a, button {
+        position: relative;
         text-transform: uppercase;
         border: none;
         background-color: transparent;
@@ -17,9 +18,20 @@
         color: white;
         cursor: pointer;
         transition: transform .5s;
+        text-decoration: none;
 
-        &:hover {
-            transform: scale(1.2);
+        svg {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.inactive > svg {
+            opacity: 0;
+        }
+
+        &.inactive:hover > svg {
+                opacity: .5;
         }
     }
 }

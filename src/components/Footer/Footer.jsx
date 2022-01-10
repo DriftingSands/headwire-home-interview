@@ -7,7 +7,7 @@ import mailIcon from '../../assets/icons/open-mail.png'
 
 export default function Footer() {
     return (
-        <section className='footerWrapper'>
+        <section className='footerWrapper' id='contactsSection'>
             <div className='footerTop'>
                 <div className='links'>
                     <img className='footerLogo' src={theRatioLogo} alt="logo" />

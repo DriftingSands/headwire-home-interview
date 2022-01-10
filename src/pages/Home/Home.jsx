@@ -31,9 +31,9 @@ export default function Home() {
 
     <Quote/>
 
-    <Services/>
+    <Services />
 
-    <Team/>
+    <Team />
 
     <Blog />
 
